@@ -1,4 +1,11 @@
 *{
     padding: 0;
     margin: 0;
+ 
+}
+
+
+nav  {
+    letter-spacing: 4px;
+    font-family: 'Metal Mania', cursive;
 }
