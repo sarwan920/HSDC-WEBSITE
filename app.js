@@ -3,14 +3,23 @@ const path=require('path');
 const app=express();
 
 
+const errorController=require('./controllers/error');
+
+const mainRoute=require('./routes/contact');
+
+
 app.set('view engine','ejs');
 app.set("views", "views");
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get('/',(req,res)=>{
-    res.render('index');
-});
+// app.get('/',(req,res)=>{
+//     res.render('index');
+// });
+
+app.use(mainRoute);
+
+app.use('/',errorController.getError);
 
 
 app.listen(3000,()=>{
