@@ -3,9 +3,11 @@ const express=require('express');
 const router=express.Router();
 
 
-const contactController=require('../controllers/index');
+const mainController=require('../controllers/index');
 
-router.get('/',contactController.getIndex);
+router.get('/',mainController.getIndex);
+
+router.get('/membership',mainController.getMembership);
 
 
 module.exports=router;

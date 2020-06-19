@@ -4,3 +4,9 @@ exports.getIndex=(req,res,next)=>{
 
 
 }
+
+exports.getMembership=(req,res,next)=>{
+
+    res.render('membership',{ title:'Membership'});
+
+}
