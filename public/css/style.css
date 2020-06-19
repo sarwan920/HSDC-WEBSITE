@@ -3,6 +3,9 @@
     margin: 0;
  
 }
+
+
+
 nav  {
     letter-spacing: 4px;
     font-family: 'Metal Mania', cursive;
@@ -28,3 +31,4 @@ nav  {
   section {
       min-height:calc(100% - 70px);
   }
+

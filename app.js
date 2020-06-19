@@ -5,7 +5,7 @@ const app=express();
 
 const errorController=require('./controllers/error');
 
-const mainRoute=require('./routes/contact');
+const mainRoute=require('./routes/index');
 
 
 app.set('view engine','ejs');
