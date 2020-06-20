@@ -9,5 +9,7 @@ router.get('/',mainController.getIndex);
 
 router.get('/membership',mainController.getMembership);
 
+router.post('/membership',mainController.postMembership);
+
 
 module.exports=router;
