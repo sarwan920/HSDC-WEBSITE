@@ -7,7 +7,7 @@ exports.getIndex=(req,res,next)=>{
 
 exports.getMembership=(req,res,next)=>{
 
-    res.render('membership',{ title:'Membership'});
+    res.render('membership',{ title:'Membership',message:''});
 
 }
 
@@ -15,6 +15,7 @@ exports.postMembership=(req,res,next)=>{
 
     const fullName=req.body.fullName
 console.log(fullName);
-res.redirect('/');
+
+res.render('membership',{ title:'Membership' , message:'Your Membership Form has been Submitted Successfully'});
 
 }
