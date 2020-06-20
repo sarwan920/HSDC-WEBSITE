@@ -13,8 +13,8 @@ exports.getMembership=(req,res,next)=>{
 
 exports.postMembership=(req,res,next)=>{
 
-    const fullName=req.body.fullName
-console.log(fullName);
+//     const fullName=req.body.fullName
+// console.log(fullName);
 
 res.render('membership',{ title:'Membership' , message:'Your Membership Form has been Submitted Successfully'});
 

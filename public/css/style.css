@@ -1,16 +1,17 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Metal Mania', cursive;
-    
+    /* font-family: 'Metal Mania', cursive; */
+    font-family: 'Hind Madurai', sans-serif;
+
 }
 
 
 
-nav  {
+/* nav  {
     letter-spacing: 4px;
     
-}
+} */
 
 .form-container{
     /* background:#fff; */
