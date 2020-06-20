@@ -8,6 +8,7 @@
 
 
 
+
 /* nav  {
     letter-spacing: 4px;
     
@@ -54,4 +55,19 @@
 .required:after {
     content:" *";
     color: red;
+}
+
+/*for Form validation*/
+label.remove_error_label{
+   
+    display:none;
+}
+
+label.add_error_label{
+    color: #d9534f;
+    font-family: 'Merriweather', serif;
+    margin-top: 5px;
+    
+    font-size: 0.8rem;
+    display: block;
 }

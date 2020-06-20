@@ -13,8 +13,15 @@ exports.getMembership=(req,res,next)=>{
 
 exports.postMembership=(req,res,next)=>{
 
-//     const fullName=req.body.fullName
-// console.log(fullName);
+ const fullName=req.body.fullName
+const email=req.body.email;
+const phone=req.body.phone;
+const uname=req.body.uname;
+const dname=req.body.dname;
+const experience=req.body.experience;
+const motivation=req.body.motivation;
+
+
 
 res.render('membership',{ title:'Membership' , message:'Your Membership Form has been Submitted Successfully'});
 
