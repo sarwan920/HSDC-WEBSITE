@@ -66,5 +66,57 @@ function validation(){
         motivation.focus();
          return false;
      } 
+
+     return true;
 }
+
+
+
+function clear_full_name() {
+    valid_full_name.classList.replace("add_error_label", "remove_error_label");
+   
+
+}
+
+
+function clear_email() {
+valid_email.classList.replace("add_error_label", "remove_error_label");
+    
+
+}
+
+
+function clear_phone() {
+    valid_phone.classList.replace("add_error_label", "remove_error_label");
+    
+}
+
+function clear_university_name() {
+
+    valid_university_name.classList.replace("add_error_label", "remove_error_label");
+    
+
+}
+
+function clear_department_name() {
+    valid_department_name.classList.replace("add_error_label", "remove_error_label");
+    
+
+}
+
+
+function clear_experience() {
+    valid_experience.classList.replace("add_error_label", "remove_error_label");
+   
+
+}
+
+function clear_motivation() {
+    valid_motivation.classList.replace("add_error_label", "remove_error_label");
+   
+
+}
+
+
+
 
