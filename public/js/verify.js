@@ -17,6 +17,9 @@ const valid_department_name=document.getElementById('valid_department_name');
 const valid_experience=document.getElementById('valid_experience');
 const valid_motivation=document.getElementById('valid_motivation');
 
+
+const form_title=document.getElementById('form-title');
+
 //regex expression for number validation
 let phone_regex=/^[+]92\d{10}$/;
 
@@ -25,26 +28,34 @@ function validation(){
 
     if( fullName.value==='' ){
         valid_full_name.classList.replace("remove_error_label", "add_error_label");
+        form_title.scrollIntoView();
        fullName.focus();
+     
         return false;
     } 
 
 
     if( email.value==='' ){
         valid_email.classList.replace("remove_error_label", "add_error_label");
+        form_title.scrollIntoView();
         email.focus();
+        
          return false;
      } 
 
      if( !(phone_regex.test(phone.value))){
     valid_phone.classList.replace("remove_error_label", "add_error_label");
+    form_title.scrollIntoView();
         phone.focus();
+        
          return false;
      } 
 
      if( uname.value==='' ){
         valid_university_name.classList.replace("remove_error_label", "add_error_label");
+        form_title.scrollIntoView();
         uname.focus();
+        
          return false;
      } 
 
