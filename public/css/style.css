@@ -71,3 +71,9 @@ label.add_error_label{
     font-size: 0.8rem;
     display: block;
 }
+
+.card:hover{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.175) !important;
+    transform: scale(1.1);
+    transition: 0.5s;
+}

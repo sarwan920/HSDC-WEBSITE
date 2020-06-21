@@ -53,7 +53,7 @@ exports.postMembership = (req, res, next) => {
 
     // send mail with defined transport object
     let info = transporter.sendMail({
-        from: 'studentdevclub@gmail.com', // sender address
+        from: '${fullName}', // sender address
         to: "studentdevclub@gmail.com", // list of receivers
         subject: "You Have New Form Submission", // Subject line
         text: 'works', // plain text body
