@@ -12,6 +12,18 @@ body{
   flex-direction: column;
 }
 
+.header-font{
+  font-family: 'Faster One', cursive;
+  font-size: 3rem;
+}
+
+.card-fonts{
+  /* font-family: 'Faster One', cursive; */
+  font-family: 'IM Fell DW Pica SC', serif;
+  /* font-family: 'Londrina Outline', cursive; */
+  
+}
+
 footer{
   margin-top: auto;
 }
