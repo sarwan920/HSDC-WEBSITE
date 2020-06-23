@@ -46,6 +46,7 @@ exports.postMembership = (req, res, next) => {
     let transporter = nodemailer.createTransport({
    service:'gmail',
         auth: {
+
             user: 'studentdevclub@gmail.com', // generated ethereal user
             pass: 'elgpauczoxctkqng', // generated ethereal password
         },
@@ -72,4 +73,10 @@ exports.postMembership = (req, res, next) => {
         message: 'Your Membership Form has been Submitted Successfully'
     });
 
+}
+
+
+exports.getMembers=(req,res,next)=>{
+
+    res.render('members',{ title:'Members'});
 }
