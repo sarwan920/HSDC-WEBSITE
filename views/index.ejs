@@ -3,8 +3,8 @@
 
 
 
-<div class="container-fluid">
-   <div class="row">
+<div class="container">
+   <div class="row justify-content-center">
       <div class="col-md-12">
 
          <%- include('includes/carousel.ejs') %>
@@ -13,51 +13,75 @@
    </div>
 </div>
 
-<div class="container-fluid p-5 justify-content-center"> 
+<div class="container justify-content-center">
    <h4 class="p-4 text-primary">Things You Will Learn</h4>
-   <div class="row bg-light">
-    
-      <div class="col-12  col-md-4">
+   <div class="row bg-light justify-content-center">
 
-         <div class="card shadow " style="width: 18rem;">
-            <img class="card-img-top " src="/icon/peer.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Peer to Peer Learning</h5>
-              <p class="card-text text-primary text-justify">On this platform everyone will learn by working together.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+      <!--Card Number One-->
+      <div class="col-12 col-sm-6  col-md-3 col-lg-3 col-xl-3 ">
+         <div class="card shadow " style="width: 16rem;">
+            <div class="row justify-content-center">
+               <img class="p-2" src="/icon/peer.png" height="140px" width="140px" alt="Card image cap">
             </div>
-          </div>
+            <div class="card-body">
+               <h5 class="card-title text-primary">Peer to Peer Learning</h5>
+               <p class="card-text text-primary ">On this platform everyone will learn by working together.
+               </p>
+               <a href="#" class="btn btn-primary stretched-link">Learn More</a>
+            </div>
+         </div>
 
       </div>
 
-      <div class="col-12  col-md-4">
-
-         <div class="card shadow " style="width: 18rem;">
-            <img class="card-img-top " src="/icon/connect.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Connect</h5>
-              <p class="card-text text-primary text-justify">Meet and Connect with Different People from around the country.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+      <!--Card Number Two-->
+      <div class="col-12  col-sm-6 col-md-3">
+         <div class="card shadow " style="width: 16rem;">
+            <div class="row justify-content-center">
+               <img class="p-2"src="/icon/connect.png" height="140px" width="140px" alt="Card image cap">
             </div>
-          </div>
-         
+            <div class="card-body">
+               <h5 class="card-title text-primary">Connect</h5>
+               <p class="card-text text-primary ">Connect with Different People from around the country.</p>
+               <a href="#" class="btn btn-primary stretched-link">Learn More</a>
+            </div>
+         </div>
       </div>
 
-      <div class="col-12  col-md-4">
 
-         <div class="card shadow " style="width: 18rem;">
-            <img class="card-img-top " src="/icon/grow.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Grow</h5>
-              <p class="card-text text-primary text-justify">Grow your business by working together</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+      <!--Card Number Three-->
+      <div class="col-12 col-sm-6  col-md-3 ">
+         <div class="card shadow " style="width: 16rem;">
+            <div class="row justify-content-center">
+               <img class="p-2" src="/icon/grow.png" height="140px" width="140px" alt="Card image cap">
             </div>
-          </div>
-         
+            <div class="card-body">
+               <h5 class="card-title text-primary">Grow</h5>
+               <p class="card-text text-primary ">Grow your business by working together</p>
+               <a href="#" class="btn btn-primary stretched-link">Learn More</a>
+            </div>
+         </div>
+
+      </div>
+
+
+      <!--Card Number Four-->
+      <div class="col-12 col-sm-6  col-md-3">
+         <div class="card shadow " style="width: 16rem;">
+            <div class="row justify-content-center">
+               <img class="p-2" src="/icon/code.png" height="140px" width="140px" alt="Card image cap">
+            </div>
+
+            <div class="card-body">
+               <h5 class="card-title text-primary">Code</h5>
+               <p class="card-text text-primary ">Code And Learn by working Together</p>
+               <a href="#" class="btn btn-primary stretched-link">Learn More</a>
+            </div>
+         </div>
+
       </div>
    </div>
 </div>
 
-<%- include('includes/footer.ejs'); %> 
+<%- include('includes/footer.ejs'); %>
 
 <%- include('includes/end.ejs'); %>
