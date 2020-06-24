@@ -6,6 +6,21 @@
 
 }
 
+
+.nav-link:hover {
+ 
+background-color: #e5f0ef;
+transition:0.5s;
+border-radius:5px;
+}
+
+
+.nav-item:hover{
+  color: crimson;
+}
+
+
+
 body{
   min-height: 100vh;
   display: flex;
