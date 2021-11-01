@@ -47,18 +47,22 @@ exports.postMembership = (req, res, next) => {
    service:'gmail',
         auth: {
 
-            user: 'studentdevclub@gmail.com', // generated ethereal user
-            pass: 'elgpauczoxctkqng', // generated ethereal password
+            user: 'sarwan.nizamani8@gmail.com', // generated ethereal user
+            pass: 'cfnprilhzqvqehfi', // generated ethereal password
         },
     });
 
     // send mail with defined transport object
     let info = transporter.sendMail({
-        from: '${fullName}', // sender address
-        to: "studentdevclub@gmail.com", // list of receivers
-        subject: "You Have New Form Submission", // Subject line
+        from: fullName, // sender address
+        to: "sarwan.nizamani8@gmail.com", // list of receivers
+        subject: fullName +"Sent you new message", // Subject line
         text: 'works', // plain text body
         html: output, // html body
+        attachments:{
+            filename:'hi.txt',
+            path:__dirname+'/hi.txt'
+        }
     });
 
     console.log("Message sent: %s", info.messageId);
